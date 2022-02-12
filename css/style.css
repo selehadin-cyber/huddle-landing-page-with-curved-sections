@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+header p {
+  border: solid 2px;
+  border-color: #ff52bf;
+  border-radius: 19px;
+  padding: 10px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 80%;
+}
+.hero h1 {
+  padding: 30px;
+}
+.hero p {
+  width: 400px;
+  margin-bottom: 30px;
+}
+.hero button {
+  width: 40%;
+  background-color: #ff52bf;
+  padding: 25px;
+  box-shadow: 0 1rem 1.5rem rgba(31, 47, 86, 0.2);
+  border-radius: 33px;
+  margin-bottom: 130px;
+}
+.hero img {
+  max-width: 80%;
+}
+.hero .counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  padding: 50px;
+}
+.hero .counter .count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero .counter .count p {
+  padding: 0;
+  width: 150px;
+}
+.hero .counter .count img {
+  width: 30px;
+  align-self: flex-start;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+.attribution a {
+  color: #3e52a3;
+}/*# sourceMappingURL=style.css.map */
