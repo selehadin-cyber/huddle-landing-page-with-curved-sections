@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   margin: 0;
   border: 0;
@@ -32,6 +34,8 @@ header {
   margin-bottom: 100px;
 }
 header p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   border: solid 2px;
   border-color: #ff52bf;
   border-radius: 19px;
@@ -47,12 +51,18 @@ header p {
 }
 .hero h1 {
   padding: 30px;
+  font-family: Poppins;
 }
 .hero p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   width: 400px;
   margin-bottom: 30px;
 }
 .hero button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: white;
   width: 40%;
   background-color: #ff52bf;
   padding: 25px;
@@ -71,6 +81,7 @@ header p {
   justify-content: space-between;
   width: 80%;
   padding: 50px;
+  padding-bottom: 200px;
 }
 .hero .counter .count {
   display: flex;
@@ -78,13 +89,68 @@ header p {
   align-items: center;
   flex-direction: column;
 }
+.hero .counter .count strong {
+  font-size: 90px;
+  font-weight: 700;
+  color: black;
+}
 .hero .counter .count p {
   padding: 0;
-  width: 150px;
+  width: 250px;
+  color: grey;
 }
 .hero .counter .count img {
   width: 30px;
   align-self: flex-start;
+}
+
+.dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 80vh;
+  background-image: url(../images/bg-section-top-desktop-1.svg);
+  background: #f5faff;
+  position: relative;
+}
+.dark::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 139px;
+  background-image: url(../images/bg-section-top-desktop-1.svg);
+  top: -139px;
+}
+.dark .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  width: 40%;
+}
+.dark .text h1 {
+  align-self: flex-start;
+  padding: 20px;
+  padding-left: 0;
+  font-size: 30px;
+  font-family: Poppins;
+  font-weight: 700;
+}
+.dark .text p {
+  font-family: "Open Sans", sans-serif;
+}
+.dark::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 139px;
+  background-image: url(../images/bg-section-bottom-desktop-1.svg);
+  bottom: -139px;
+}
+.dark img {
+  width: 40%;
 }
 
 .attribution {
