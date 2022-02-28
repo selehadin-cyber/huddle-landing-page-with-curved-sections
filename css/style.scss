@@ -132,6 +132,83 @@ header {
         width: 40%;
     }
 }
+.light {
+    @include flexCenter(row);
+    height: 80vh;
+    background: white;
+    position: relative;
+    margin-top: 139px;
+    .text {
+        @include flexCenter(column);
+        padding: 50px;
+        width: 40%;
+        h1 {
+            align-self: flex-start;
+            padding: 20px;
+            padding-left: 0;
+            font-size: 30px;
+            font-family: Poppins;
+            font-weight: 700;
+        }
+        p {
+            font-family: 'Open Sans', sans-serif;
+
+        }
+    }
+    
+    img {
+        width: 40%;
+    }
+}
+.hero-last {
+    @include flexCenter(column);
+    width: 100vw;
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 32px;
+    }
+    button {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: white;  
+        width: 40%;
+        background-color: hsl(322, 100%, 66%);
+        padding: 25px;
+        box-shadow: 0 1rem 1.5rem rgba(hsl(223, 47%, 23%), .2);
+        border-radius: 33px;
+        margin-top: 70px;
+    }
+}
+.footer-container {
+    @include flexCenter(row);
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    justify-content: space-around;
+    position: relative;
+    height: 400px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 139px;
+        background-image: url(../images/bg-footer-top-desktop.svg);
+        top: -139px;
+    }
+    .right {
+        padding: 50px;
+        width: 40%;
+    }
+    .left {
+        padding: 50px;
+        width: 40%;
+        img {
+            fill: white;
+        }
+    }
+}
 
 
 
