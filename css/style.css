@@ -240,7 +240,7 @@ header p {
   width: 40%;
 }
 .footer-container .left img {
-  fill: white;
+  fill: white !important;
 }
 
 .attribution {
