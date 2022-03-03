@@ -15,6 +15,7 @@
 body {
     @include flexCenter(column);
     width: 100%;
+    overflow-x: clip;
 }
 main {
     @include flexCenter(column);
@@ -47,6 +48,7 @@ header {
         font-weight: 400;  
         width: 400px;
         margin-bottom: 30px;
+        text-align: center;
     }
     button {
         font-family: 'Open Sans', sans-serif;
@@ -94,6 +96,7 @@ header {
     background-image: url(../images/bg-section-top-desktop-1.svg);
     background: hsl(207, 100%, 98%);
     position: relative;
+    margin: 139px 0 139px 0;
     &::before {
         content: "";
         position: absolute;
@@ -132,12 +135,31 @@ header {
         width: 40%;
     }
 }
+.wavy {
+    height: 70vh;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 139px;
+        background-image: url(../images/bg-section-top-desktop-2.svg);
+        top: -139px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 139px;
+        background-image: url(../images/bg-section-bottom-desktop-2.svg);
+        bottom: -139px;
+
+    }
+}
 .light {
     @include flexCenter(row);
     height: 80vh;
     background: white;
     position: relative;
-    margin-top: 139px;
     .text {
         @include flexCenter(column);
         padding: 50px;
@@ -189,8 +211,10 @@ header {
     justify-content: space-around;
     position: relative;
     height: 400px;
+    margin-top: 100px;
     h1 {
         font-family: Poppins;
+        align-self: flex-start;
     }
     p {
         font-family: 'Open Sans', sans-serif;
@@ -212,6 +236,11 @@ header {
             @include flexCenter(row);
             align-self: flex-start;
             gap: 2rem;
+            justify-content: baseline;
+            width: 100%;
+        }
+        .form {
+            width: 80%;
         }
         input {
             width: 100%;
@@ -252,6 +281,7 @@ header {
         }
         p {
             padding: 5px 20px;
+            margin: 0;
         }
     }
     .hero {
@@ -269,11 +299,28 @@ header {
             gap: 5rem;
         }
         button {
-            width: 60%;
+            width: 100%;
         }
     }
     .dark {
         flex-direction: column-reverse;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 112px;
+            background-image: url(../images/bg-section-top-mobile-1.svg);
+            top: -112px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 52px;
+            background-image: url(../images/bg-section-bottom-mobile-1.svg);
+            bottom: -52px;
+    
+        }
         img {
             width: 80%;
         }
@@ -298,9 +345,42 @@ header {
             }
         }
     }
+    .wavy {
+        height: 70vh;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 103px;
+            background-image: url(../images/bg-section-top-mobile-2.svg);
+            top: -103px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 101px;
+            background-image: url(../images/bg-section-bottom-mobile-2.svg);
+            bottom: -101px;
+    
+        }
+    }
+    .hero-last {
+        button {
+            width: 60%;
+        }
+    }
     .footer-container {
         flex-direction: column-reverse;
         height: initial;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 53px;
+            background-image: url(../images/bg-footer-top-mobile.svg);
+            top: -53px;
+        }
         .right {
             width: 100%;
         }
