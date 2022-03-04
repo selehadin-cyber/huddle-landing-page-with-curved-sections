@@ -208,6 +208,10 @@ header p {
   width: 40%;
 }
 
+button:hover {
+  background-color: #ff8fd8 !important;
+}
+
 .hero-last {
   display: flex;
   justify-content: center;

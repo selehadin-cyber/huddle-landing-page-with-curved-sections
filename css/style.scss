@@ -182,6 +182,9 @@ header {
         width: 40%;
     }
 }
+button:hover {
+    background-color: hsl(321, 100%, 78%)!important;
+}
 .hero-last {
     @include flexCenter(column);
     width: 100vw;
